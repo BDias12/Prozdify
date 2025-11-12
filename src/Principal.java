@@ -59,5 +59,20 @@ public class Principal {
         System.out.println("📀 Primeiro episódio: " + prozdcast.getEpisodios().get(0).getTitulo());
 
         System.out.println(musica1);
+        
+        Usuario usuario1 = new Usuario("Bruno");
+        Usuario usuario2 = new Usuario("Maria");
+
+        usuario1.reproduzirMidia(musica1);
+        usuario1.reproduzirMidia(ep1);
+        usuario1.curtirMidia(musica1);
+        usuario1.curtirMidia(video2);
+
+        usuario2.reproduzirMidia(video3);
+        usuario2.reproduzirMidia(ep3);
+        usuario2.curtirMidia(ep3);
+
+        usuario1.mostrarHistorico();
+        usuario2.mostrarHistorico();
     }
 }
